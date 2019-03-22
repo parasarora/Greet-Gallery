@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SingleActivityView"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editorLayout"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:layout_weight="9">-->
+
+
+    <ImageView
+        android:id="@+id/SingleView"
+        android:layout_width="match_parent"
+        android:layout_weight="0.8"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/viewGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="150"
+        android:hint="@string/hint"
+        android:text="@string/editSingle"
+        android:textColor="#f5060a"
+        android:textSize="25sp"
+        android:fontFamily="cursive"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <include layout="@layout/fab_layout" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:borderWidth="2dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="end|bottom"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_help" />
+
+
+
+    <TextView
+        android:id="@+id/advert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:text="By- Greet Gallery"
+        android:textColor="@color/redText"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

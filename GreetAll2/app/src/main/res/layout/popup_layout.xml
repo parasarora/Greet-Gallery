@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.92"
+    android:background="#767676">
+
+    <!--<TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Format your Text Style Here"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+
+    <EditText
+        android:id="@+id/popupMainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.03"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="This is a simple popup"
+        android:hint="Type a message"
+        android:textSize="25sp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Font Size"
+        android:textSize="20sp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="39dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="45"
+
+        android:progress="5"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Font Style"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/colorPink"
+        android:layout_alignRight="@+id/popupMainText"
+        android:layout_alignEnd="@+id/popupMainText" />
+
+    <Button
+        android:id="@+id/font1"
+        android:text="T"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/colorPink"
+        android:layout_alignBottom="@+id/colorPink"
+        android:layout_toRightOf="@+id/colorPink"
+        android:layout_toEndOf="@+id/colorPink" />
+
+    <Button
+        android:id="@+id/colorPink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_color_lens"
+        android:layout_alignTop="@+id/submit"
+        android:layout_alignLeft="@+id/popupMainText"
+        android:layout_alignStart="@+id/popupMainText"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+
+</RelativeLayout>

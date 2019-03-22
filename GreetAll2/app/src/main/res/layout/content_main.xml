@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    tools:context="com.binarycrust.greetall.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--<RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/mainlinear"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+        <Button android:id="@+id/btnGetMoreResults"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            android:background="@color/blackText"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/mainlinear"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:id="@+id/birthdayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/birthday"
+            android:background="@color/colorAccent"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/everydayBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:background="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:text="@string/everyday" />
+
+        <Button
+            android:id="@+id/anniversaryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:background="@color/yel"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:text="@string/anniversary"/>
+
+        <Button
+            android:id="@+id/festiveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:background="@color/purple"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:text="@string/festival"/>
+        <!--</LinearLayout>-->
+        <Button
+            android:id="@+id/otherEventsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:background="@color/green"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:text="@string/social" />
+
+        <Button
+            android:id="@+id/buttonRequestPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Permission"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="368dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+
+
+    </LinearLayout>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/browse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:alpha="0.8"
+        android:textColor="@color/White"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/browse"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintVertical_bias="0.948" />-->
+
+
+
+</android.support.constraint.ConstraintLayout>
